@@ -47,19 +47,26 @@ console.log(appData);
 // while (i < 2) {
 //     let a = prompt("Введите обязательную статью расходов в этот месяце", ''),
 //         b = prompt("Во сколько обойдется?", '');
+//     if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(a)) != null 
+//         && a != '' && b != '' && a.length < 50) {  
 //         console.log("done");  
 //         i++;  
 //         appData.expenses[a] = b;
-// };
+//     }  else {
+//         break;
 
+//     }     
+// };
 
 
 // let i = 0;
 // do {
 //     let a = prompt("Введите обязательную статью расходов в этот месяце", ''),
 //         b = prompt("Во сколько обойдется?", '');
-//     console.log("done");  
-//     i++;  
-//     appData.expenses[a] = b;
+//     if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(a)) != null 
+//         && a != '' && b != '' && a.length < 50)    
+//         console.log("done");  
+//         i++;  
+//         appData.expenses[a] = b;
 // }
 // while (i < 2);
