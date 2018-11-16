@@ -12,8 +12,7 @@ let appData = {
     money: money,
     timeData: time,
     expenses: {
-        // function(){
-        //     console.log("expensesMandatory");
+        "expensesMandatory" : "expensesHowMatch"
     },
     optionalExpenses: {},
     income: [],
