@@ -20,6 +20,7 @@ let appData = {
 appData.expenses[expensesMustBe] = expensesHowMatch;
 appData.expenses[expensesMustBe2] = expensesHowMatch2;
 
+
 console.log(appData);
 
 alert( money / days );
