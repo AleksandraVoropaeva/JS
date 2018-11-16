@@ -14,18 +14,18 @@ let appData = {
 };
 
 
-// for (let i = 0; i < 2; i++) {
-//     let a = prompt("Введите обязательную статью расходов в этот месяце", ''),
-//         b = prompt("Во сколько обойдется?", '');
+for (let i = 0; i < 2; i++) {
+    let a = prompt("Введите обязательную статью расходов в этот месяце", ''),
+        b = prompt("Во сколько обойдется?", '');
     
-//     if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(a)) != null 
-//         && a != '' && b != '' && a.length < 50) {
-//         console.log("done");    
-//         appData.expenses[a] = b;
-//     } else {
+    if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(a)) != null 
+        && a != '' && b != '' && a.length < 50) {
+        console.log("done");    
+        appData.expenses[a] = b;
+    } else {
 
-//     }   
-// };
+    }   
+};
 
 appData.moneyPerDay = appData.money / days;
 alert("Ежедневный бюджет: " + appData.moneyPerDay);
