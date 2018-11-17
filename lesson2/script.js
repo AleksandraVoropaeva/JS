@@ -14,19 +14,18 @@ let appData = {
 };
 
 
-for (let i = 0; i < 2; i++) {
-    let a = prompt("Введите обязательную статью расходов в этот месяце", ''),
-        b = prompt("Во сколько обойдется?", '');
+// for (let i = 0; i < 2; i++) {
+//     let a = prompt("Введите обязательную статью расходов в этот месяце", ''),
+//         b = prompt("Во сколько обойдется?", '');
     
-    if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
-        && a != '' && b != '' && a.length < 50) {
-        console.log("done");    
-        appData.expenses[a] = b;
-    } else {
-        continue;
-
-    }   
-};
+//     if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
+//         && a != '' && b != '' && a.length < 50) {
+//         console.log("done");    
+//         appData.expenses[a] = b;
+//     } else {
+//         i--;
+//     }   
+// };
 
 appData.moneyPerDay = appData.money / days;
 alert("Ежедневный бюджет: " + appData.moneyPerDay);
@@ -46,28 +45,31 @@ console.log(appData);
 
 // let i = 0;
 // while (i < 2) {
+//     i++;
 //     let a = prompt("Введите обязательную статью расходов в этот месяце", ''),
 //         b = prompt("Во сколько обойдется?", '');
 //     if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
 //         && a != '' && b != '' && a.length < 50) {  
 //         console.log("done");  
-//         i++;  
 //         appData.expenses[a] = b;
 //     }  else {
-//         break;
-
+//         i--;
 //     }     
 // };
 
 
 // let i = 0;
 // do {
+//     i++;  
 //     let a = prompt("Введите обязательную статью расходов в этот месяце", ''),
 //         b = prompt("Во сколько обойдется?", '');
 //     if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null 
-//         && a != '' && b != '' && a.length < 50)    
+//         && a != '' && b != '' && a.length < 50) {  
 //         console.log("done");  
-//         i++;  
 //         appData.expenses[a] = b;
+//     }
+//     else {
+//         i--;
+//     }
 // }
 // while (i < 2);
