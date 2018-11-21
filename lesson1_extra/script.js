@@ -1,4 +1,4 @@
-var num = 33721;
+var num = String(33721);
 let N = Math.log(num) * Math.LOG10E + 1 | 0;
 let i = 0;
 var M = 1;
