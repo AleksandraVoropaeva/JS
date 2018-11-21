@@ -40,25 +40,26 @@ function chooseExpenses() {
 chooseExpenses();
 
 
+function detectDayBudget() {
+    let days = 30;
+    appData.moneyPerDay = (appData.money / days).toFixed();
+    alert("Ежедневный бюджет: " + appData.moneyPerDay);
+    return appData.moneyPerDay
+}
+detectDayBudget();
+
+
 function detectLevel() {
 
-    function detectDayBudget() {
-        let days = 30;
-        appData.moneyPerDay = (appData.money / days).toFixed();
-        alert("Ежедневный бюджет: " + appData.moneyPerDay);
-        return appData.moneyPerDay
-        }
-        detectDayBudget();
-
     if(appData.moneyPerDay < 500) {
-    console.log("Минимальный уровень достатка");
-    }  else if (appData.moneyPerDay > 500 && appData.moneyPerDay < 2000) {
-    console.log("Средний уровень достатка");
-    } else if (appData.moneyPerDay > 2000) {
-    console.log("Высокий уровень достатка");
-    } else {
-    console.log("Произошла ошибка");
-    }
+        console.log("Минимальный уровень достатка");
+        }  else if (appData.moneyPerDay > 500 && appData.moneyPerDay < 2000) {
+        console.log("Средний уровень достатка");
+        } else if (appData.moneyPerDay > 2000) {
+        console.log("Высокий уровень достатка");
+        } else {
+        console.log("Произошла ошибка");
+        }
 } 
 detectLevel();
 
