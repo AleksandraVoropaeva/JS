@@ -14,7 +14,9 @@ let
 li5.classList.add('menu-item');
 li5.textContent = 'Пятый пункт';
 
+
 menu.insertBefore(li[2], li[1]);
+menu.appendChild(li5);
 
 title.textContent = 'Мы продаем только подлинную технику Apple';
 
