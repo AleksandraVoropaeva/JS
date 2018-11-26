@@ -4,7 +4,7 @@ let
     li = document.getElementsByTagName('li'),
     header = document.getElementsByTagName('header'),
     column2 = document.getElementsByClassName('column')[1],
-    adv = document.getElementsByClassName('.adv'),
+    adv = document.querySelector('.adv'),
     question = document.getElementById('prompt'),
     title = document.getElementById('title'),
     answer = prompt('Как вы относитесь к технике Apple?', '');
@@ -22,4 +22,14 @@ document.body.style.backgroundImage = 'url(img/apple_true.jpg)';
 
 question.textContent = answer;
  
-// column2.removeChild(adv);
+column2.removeChild(adv);
+
+// console.log(li5);
+// console.log(menu);
+// console.log(li);
+// console.log(header);
+console.log(column2);
+console.log(adv);
+// console.log(question);
+// console.log(title);
+// console.log(answer);
