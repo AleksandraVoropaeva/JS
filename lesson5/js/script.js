@@ -35,3 +35,5 @@ console.log(adv);
 // console.log(question);
 // console.log(title);
 // console.log(answer);
+
+console.log(typeof(li5 && menu));
