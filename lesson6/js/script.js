@@ -1,3 +1,4 @@
+function main() {
 'use strict';
 
 let startBtn = document.getElementById('start'),
@@ -30,11 +31,15 @@ let startBtn = document.getElementById('start'),
 console.log(budgetValue);
 
 countBtn.disabled = true;
+expensesBtn.disabled = true;
+optionalExpensesBtn.disabled = true;
 
 let money, time;
 
 startBtn.addEventListener('click', function() {
     countBtn.disabled = false;
+    expensesBtn.disabled = false;
+    optionalExpensesBtn.disabled = false;
     let money, time;    time = prompt("Введите дату в формате YYYY-MM-DD", '');
     money = +prompt("Ваш бюджет на месяц?", '');
 
@@ -105,13 +110,6 @@ incomeItem.addEventListener('change', function(){
     let items = incomeItem.value;
     appData.income = items.split(', ');
     incomeValue.textContent = appData.income;
-
-            if ((typeof (items)) === 'string' && (typeof (items)) != null && items != '') {
-                
-            } else {
-                i--;
-                // i = i - 1;
-            }
 });
 
 checkSavings.addEventListener('click', function() {
@@ -162,6 +160,5 @@ let appData = {
     savings: false,
 
 };
-
-
-console.log(appData);
+}
+main();
