@@ -55,8 +55,18 @@ startBtn.addEventListener('click', function() {
 });
 
 
+function checkInputs(){
+    for(let i = 0; i <= expensesItem.length; i++){
+        if(expensesItem[i] == '' || expensesItem[i] == 'undefined' || (typeof(expensesItem[i])) == null){
+            expensesBtn.disabled = true;
+        }
+        else{
+            expensesBtn.disabled = false;
+        }
+}
+}
 expensesBtn.addEventListener('click', function() {
-
+    checkInputs();
     let sum = 0;
 
     for (let i = 0; i < expensesItem.length; i++) {
@@ -69,8 +79,7 @@ expensesBtn.addEventListener('click', function() {
             appData.expenses[a] = b;
             sum += +b;
         } else {
-            i--;
-            // i = i - 1;
+            i = i - 1;
         }
     }
 
@@ -106,7 +115,7 @@ countBtn.addEventListener('click', function() {
  }
 });
 
-incomeItem.addEventListener('change', function(){
+incomeItem.addEventListener('input', function(){
     let items = incomeItem.value;
     appData.income = items.split(', ');
     incomeValue.textContent = appData.income;
