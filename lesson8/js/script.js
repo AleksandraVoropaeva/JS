@@ -50,17 +50,11 @@ window.addEventListener('DOMContentLoaded', function(){
             if (minutes < 10) {minutes = '0' + minutes;}
             if (hours < 10) {hours = '0' + hours;}
 
-
-            
-
             return {
                 'total': t,
                 'hours' : hours,
                 'minutes' : minutes,
-                'seconds' : seconds
-                
-
-            
+                'seconds' : seconds         
             };
     }
 
@@ -85,8 +79,6 @@ window.addEventListener('DOMContentLoaded', function(){
                         hours.textContent = '00';
                         minutes.textContent = '00';
                         seconds.textContent = '00';
-
-
                     }
             }
     }
