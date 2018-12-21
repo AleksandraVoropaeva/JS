@@ -92,10 +92,14 @@ window.addEventListener('DOMContentLoaded', function(){
         descriptionBtn = document.querySelectorAll('.description-btn');
         window.scrollTo(window.pageXOffset, window.pageYOffset); 
 
+        let popup = function () {
+            overlay.style.display = 'block';
+            this.classList.add('more-splash');
+            document.body.style.overflow = 'hidden';
+        };
+
     more.addEventListener('click', function(e){
-        overlay.style.display = 'block';
-        this.classList.add('more-splash');
-        document.body.style.overflow = 'hidden';
+       popup();
     });
 
     close.addEventListener('click', function(e){
@@ -104,16 +108,13 @@ window.addEventListener('DOMContentLoaded', function(){
         document.body.style.overflow = ''; 
     });
 
-    function popup(){
+    function tabsPopup(){
         for(let i = 0; i <= descriptionBtn.length; i++){
             descriptionBtn[i].addEventListener('click', function(e){
-            overlay.style.display = 'block';
-            this.classList.add('more-splash');
-            document.body.style.overflow = 'hidden';
-            });
+            popup();     
+    });
         }
-
     }
-    popup();
+    tabsPopup();
 
 });
